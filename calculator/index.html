@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-items: center;
+            gap: 20px;
+            background-color: aquamarine;
+
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        button {
+            height: 20vh;
+            width: 30vw;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="num11" placeholder="Enter first number">
+    <input type="text" id="num22" placeholder="Enter second number ">
+    <button onclick="add()" id="add_">ADD</button>
+    <button onclick="sub()" id="sub_">SUB</button>
+    <button onclick="mul()" id="mul_">MUL</button>
+    <p id="sum1" onclick="sum()"></p>
+
+    <script>
+
+        let x = document.getElementById("num11").value;
+        let x1 = document.getAnimations("num22").value;
+        let sum11 = document.getElementById("sum1");
+        function add() {
+            sum11.innerHTML = "sum is " + x + x1;
+        }
+        function sub() {
+            let result = x - x1
+            sum11.innerHTML = "sub is " + result;
+        }
+        function mul() {
+            let result = x * x1;
+            sum11.innerHTML = "mul is " + result;
+        }
+
+    </script>
+</body>
+
+</html>
