@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 200px 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-size: 25px;
+        }
+
+        .ok {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            height: 500px;
+            width: 700px;
+            background-color: rgb(188, 202, 214);
+            border-radius: 2px solid black;
+            box-shadow: 2px salmon;
+
+        }
+
+        #name {
+            height: 60px;
+            text-align: center;
+            width: 200px;
+        }
+
+        #sub {
+            height: 60px;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ok">
+        <input id="name" type="text" placeholder="Enter an Age of Person ">
+        <input id="sub" type="submit" onclick="change()" placeholder="Submit">
+        <p id="para"></p>
+    </div>
+    <script>
+        function change() {
+            let x = document.getElementById("name").value;
+            let y = document.getElementById("para");
+            if (x < 6) {
+                y.textContent = "Passanger will go free ";
+            }
+            else if (x > 6 & x < 18) {
+                y.textContent = "Passanger will get child discount ";
+            }
+            else if (x > 18 & x < 26) {
+                y.textContent = "Passanger will get student discount ";
+            }
+            else if (x > 26 & x < 50) {
+                y.textContent = "Passanger will get men discount ";
+            }
+            else if (x > 50) {
+                y.textContent = "Passanger will get senior citizen discount ";
+            }
+
+        }
+    </script>
+</body>
+
+</html>
