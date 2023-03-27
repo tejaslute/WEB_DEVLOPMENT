@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload_form</title>
+  </head>
+  <body>
+    <form action="app" method="post">
+      <!--Add multer for file -->
+      <div style="display: flex; align-items: center">
+        <h1>Student Profile</h1>
+        <input
+          type="text"
+          placeholder="Enter first Name "
+          name="first_name"
+        /><br />
+        <!-- <input
+          type="text"
+          placeholder="Enter Last name "
+          name="Last_name"
+        /><br />
+        <input type="email" placeholder="Enter Email " name="email" /><br />
+        
+        <input type="file" placeholder="Choose resume " name="resume" /><br /> -->
+        <input type="text" placeholder="Enter CGPA" name="marks" /><br />
+        <input type="text" placeholder="Enter Email" name="email" /><br />
+        <input type="text" placeholder="Enter Password" name="password" /><br />
+        <input type="submit" placeholder="submit" value="submit" />
+      </div>
+    </form>
+  </body>
+</html>
